@@ -32,7 +32,7 @@
         </router-link>
         <router-link to="/admin/articleEdit">
           <li :class="{selected:isCurrent('/admin/articleEdit')}">
-            <i class="iconfont icon-manage_fill"></i>
+            <i class="iconfont icon-write"></i>
             <span>写文章</span>
           </li>
         </router-link>

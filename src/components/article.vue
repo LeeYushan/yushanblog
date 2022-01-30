@@ -12,7 +12,7 @@
       <div class="article_gist">
         <p>八百年前，谢怜是金枝玉叶的太子殿下，风光无限的天之骄子。谁知一朝得道飞升，成为万人供奉的武神，却是急转直下，一贬再贬贬无可贬。八百年后，谢怜又双叒飞升了。这一次没有信徒也没有香火，某日收破烂归来的路上，他将一个神秘少年捡回家中，而这少年，居然便是那位三界谈之色变的鬼王——花城。</p>
       </div>
-      <div class="article_button">阅读全文 »</div>
+      <div class="article_button" @click="showDetail()">阅读全文 »</div>
       <div class="article_underline"></div>
     </div>
     <div class="article_wrap">
@@ -37,7 +37,12 @@
 
 <script>
 export default {
-  name: "article"
+  name: "article",
+  methods:{
+    showDetail(){
+      this.$router.push('/articleDetail')
+    }
+  }
 }
 </script>
 

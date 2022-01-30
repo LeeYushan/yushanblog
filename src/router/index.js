@@ -5,6 +5,7 @@ import about from "../components/about";
 import login from "../components/admin/login";
 import articleList from "../components/admin/articleList";
 import articleEdit from "../components/admin/articleEdit";
+import articleDetail from "../components/articleDetail";
 
 Vue.use(VueRouter)
 
@@ -27,6 +28,10 @@ const routes = [
     {
         path: '/article',
         component: article
+    },
+    {
+      path: '/articleDetail',
+      component: articleDetail
     },
     {
         path: '/admin/login',
